@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-3xl;
-  }
-  h2 {
-    font-size: 2rem;
+.clipboard-body {
+  background-image: url("/src/Clipboard/images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  .clipboard-body {
+    background-image: url("/src/Clipboard/images/bg-header-mobile.png");
   }
 }
 
 @layer components {
-  .btn-blue {
-    @apply bg-blue-800 text-white p-3 m-5 rounded-md hover:bg-blue-600;
+  .clipboard-h1 {
+    @apply text-4xl md:text-5xl text-center px-4 mt-8 text-darkGrayishBlue opacity-90;
   }
-}
-
-.myClass {
-  height: theme("spacing.128");
+  .clipboard-p {
+    @apply text-xl max-w-4xl mx-auto text-center p-8 px-4 text-grayishBlue font-thin mb-10;
+  }
 }
