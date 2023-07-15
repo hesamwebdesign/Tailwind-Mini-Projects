@@ -16,9 +16,9 @@
 
 @layer components {
   .clipboard-h1 {
-    @apply text-4xl md:text-5xl text-center px-4 mt-8 text-darkGrayishBlue opacity-90;
+    @apply text-4xl md:text-5xl text-center px-4 mt-8 text-darkGrayishBlue font-semibold opacity-90;
   }
   .clipboard-p {
-    @apply text-xl max-w-4xl mx-auto text-center p-8 px-4 text-grayishBlue font-thin mb-10;
+    @apply text-xl max-w-4xl mx-auto text-center p-8 px-4 text-grayishBlue font-normal mb-10;
   }
 }
