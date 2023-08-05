@@ -22,3 +22,29 @@
     @apply text-xl max-w-4xl mx-auto text-center p-8 px-4 text-grayishBlue font-normal mb-10;
   }
 }
+
+.loopstudios-hero {
+  background-image: url("/src/LoopStudios/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .loopstudios-hero {
+    background-image: url("/src/LoopStudios/images/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}
+
+@layer components {
+  .loopstudios-h1 {
+    @apply text-4xl md:text-5xl max-w-lg uppercase text-left p-10 m-5;
+  }
+  .loopstudios-p {
+    @apply text-lg md:text-xl max-w-4xl mx-auto text-left px-10 font-light md:ml-10 mb-10;
+  }
+
+  .loopstudios-item-gradient {
+    @apply absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+  }
+}

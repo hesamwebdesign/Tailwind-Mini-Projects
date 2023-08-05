@@ -17,9 +17,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Bai Jamjuree", "sans-serif"],
+        sans: ["Josefin Sans", "sans-serif"],
+        alata: ["Alata"],
       },
       spacing: {
         30: "120px",
+        150: "600px",
       },
     },
   },
